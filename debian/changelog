@@ -1,3 +1,12 @@
+golang-github-grpc-ecosystem-grpc-opentracing (0.0~git20180507.8e809c8-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop protobuf dependencies from the binary package
+  * Bump standards version
+  * Move to section golang
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 04 Jun 2024 19:12:56 -0400
+
 golang-github-grpc-ecosystem-grpc-opentracing (0.0~git20180507.8e809c8-2) unstable; urgency=medium
 
   * Source-only upload

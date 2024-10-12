@@ -2,18 +2,18 @@ Source: golang-github-grpc-ecosystem-grpc-opentracing
 Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
 Uploaders: Tong Sun <suntong001@users.sourceforge.net>,
            Utkarsh Gupta <utkarsh@debian.org>
-Section: devel
+Section: golang
 Testsuite: autopkgtest-pkg-go
 Priority: optional
 Build-Depends: debhelper-compat (= 12),
                dh-golang,
                golang-any,
+               golang-github-golang-protobuf-1-5-dev,
                golang-github-opentracing-opentracing-go-dev,
                golang-github-stretchr-testify-dev,
                golang-golang-x-net-dev,
-               golang-google-grpc-dev,
-               golang-goprotobuf-dev
-Standards-Version: 4.5.0
+               golang-google-grpc-dev
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-grpc-ecosystem-grpc-opentracing
 Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-grpc-ecosystem-grpc-opentracing.git
 Homepage: https://github.com/grpc-ecosystem/grpc-opentracing
@@ -26,7 +26,6 @@ Depends: golang-github-opentracing-opentracing-go-dev,
          golang-github-stretchr-testify-dev,
          golang-golang-x-net-dev,
          golang-google-grpc-dev,
-         golang-goprotobuf-dev,
          ${misc:Depends}
 Description: expressive vendor-neutral APIs for distributed tracing and context propagation
  This package enables distributed tracing in GRPC clients and servers via
